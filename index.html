@@ -1,104 +1,244 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Intel Global | Business Solutions</title>
-  <meta name="description" content="Intel Global provides technology, consulting, and business solutions for growing companies." />
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Grocereo Online | Software, Web & Mobile Development</title>
+  <meta name="description" content="Grocereo Online builds scalable web, mobile, and custom software products with modern JavaScript, TypeScript, Node.js, .NET, Angular, React, and Flutter teams." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css" />
 </head>
 <body>
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span>4251 Greenleaf Ct, Apt 111, Park City, IL 60085</span>
+      <a href="tel:8475054620">847 505 4620</a>
+    </div>
+  </div>
+
   <header class="site-header">
-    <nav class="nav">
-      <a class="logo" href="#home">Intel Global</a>
-      <button class="menu-toggle" aria-label="Open menu">☰</button>
-      <div class="nav-links">
-        <a href="#services">Services</a>
-        <a href="#about">About</a>
-        <a href="#why">Why Us</a>
-        <a href="#contact" class="btn small">Contact</a>
-      </div>
-    </nav>
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="Grocereo Online home">
+        <span class="brand-mark">G</span>
+        <span>Grocereo<span>Online</span></span>
+      </a>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <div class="nav-group">
+          <button type="button">Solutions</button>
+          <div class="dropdown">
+            <a href="#solutions">Software Development</a>
+            <a href="#solutions">Web Development</a>
+            <a href="#solutions">Mobile Development</a>
+            <a href="#solutions">IT Consulting</a>
+          </div>
+        </div>
+        <div class="nav-group">
+          <button type="button">Company</button>
+          <div class="dropdown">
+            <a href="#about">About</a>
+            <a href="team.html">Team</a>
+            <a href="#why-us">Why us</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+        <a href="#technologies">Technologies</a>
+        <a class="nav-cta" href="#contact">Contact us</a>
+      </nav>
+    </div>
   </header>
 
-  <main id="home">
-    <section class="hero">
-      <div class="hero-content">
-        <p class="eyebrow">Global business and technology services</p>
-        <h1>Reliable digital solutions for modern companies.</h1>
-        <p class="hero-text">Intel Global helps organizations improve operations, build better digital experiences, and support business growth with practical technology solutions.</p>
-        <div class="hero-actions">
-          <a href="#contact" class="btn">Get Started</a>
-          <a href="#services" class="btn secondary">View Services</a>
+  <main>
+    <section class="hero section-pad">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">Software strategy • product engineering • cloud-ready delivery</span>
+          <h1>Building modern digital products for ambitious businesses.</h1>
+          <p>Grocereo Online helps companies design, build, and scale secure web, mobile, and custom software platforms that are easy to operate and ready to grow.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#solutions">Explore services</a>
+            <a class="btn btn-secondary" href="team.html">Meet the team</a>
+          </div>
+          <div class="hero-metrics">
+            <div><strong>Full-cycle</strong><span>delivery support</span></div>
+            <div><strong>Agile</strong><span>engineering teams</span></div>
+            <div><strong>Modern</strong><span>technology stack</span></div>
+          </div>
+        </div>
+        <div class="hero-card" aria-label="Project delivery overview">
+          <div class="card-glow"></div>
+          <div class="project-card active">
+            <span>01</span>
+            <h3>Discovery & architecture</h3>
+            <p>Clear requirements, scalable foundations, and product direction before development begins.</p>
+          </div>
+          <div class="project-card">
+            <span>02</span>
+            <h3>Design & engineering</h3>
+            <p>Responsive interfaces, secure APIs, reliable data flows, and maintainable code.</p>
+          </div>
+          <div class="project-card">
+            <span>03</span>
+            <h3>Launch & support</h3>
+            <p>Deployment, monitoring, documentation, and improvement after release.</p>
+          </div>
         </div>
       </div>
-      <div class="hero-card">
-        <h3>What we deliver</h3>
-        <ul>
-          <li>Business consulting</li>
-          <li>IT and software support</li>
-          <li>Web and digital solutions</li>
-          <li>Process improvement</li>
-        </ul>
-      </div>
     </section>
 
-    <section id="services" class="section">
-      <p class="eyebrow">Services</p>
-      <h2>Solutions designed around your business needs.</h2>
-      <div class="cards">
-        <article class="card">
-          <h3>Technology Consulting</h3>
-          <p>We help companies choose the right tools, improve workflows, and plan practical technology roadmaps.</p>
+    <section id="about" class="section-pad about-band">
+      <div class="container split">
+        <div>
+          <span class="eyebrow">What we do</span>
+          <h2>Simplifying technology for a complex business world.</h2>
+        </div>
+        <p>We combine product thinking, engineering discipline, and business-focused delivery to help teams launch useful software faster. Our work covers custom applications, internal platforms, ecommerce systems, integrations, and mobile experiences.</p>
+      </div>
+      <div class="container feature-grid">
+        <article>
+          <span class="icon">↗</span>
+          <h3>Business-driven solutions</h3>
+          <p>We align every build with measurable goals, clear workflows, and the operational needs of your team.</p>
         </article>
-        <article class="card">
-          <h3>Website Development</h3>
-          <p>Clean, responsive websites that make your company look professional and help customers contact you quickly.</p>
+        <article>
+          <span class="icon">◎</span>
+          <h3>Innovative technology</h3>
+          <p>We use practical modern tools that improve speed, quality, security, and long-term maintainability.</p>
         </article>
-        <article class="card">
-          <h3>Business Support</h3>
-          <p>Operational support for documentation, process setup, vendor coordination, and digital business management.</p>
+        <article>
+          <span class="icon">◈</span>
+          <h3>Industry-ready delivery</h3>
+          <p>From MVPs to enterprise platforms, we build products that can support real users and real processes.</p>
+        </article>
+        <article>
+          <span class="icon">▣</span>
+          <h3>Scalable architecture</h3>
+          <p>Our systems are designed to grow with your traffic, data, features, and business complexity.</p>
         </article>
       </div>
     </section>
 
-    <section id="about" class="section split">
-      <div>
-        <p class="eyebrow">About us</p>
-        <h2>Built for companies that need dependable support.</h2>
+    <section id="solutions" class="section-pad">
+      <div class="container section-title">
+        <span class="eyebrow">How we help</span>
+        <h2>Solutions built around your business.</h2>
       </div>
-      <p>Intel Global is a professional services company focused on helping businesses use technology in a simple, effective, and scalable way. Our sample website can be customized with your real company details, logo, team, services, and contact information.</p>
-    </section>
-
-    <section id="why" class="section dark">
-      <p class="eyebrow">Why choose us</p>
-      <h2>Professional, simple, and ready to grow.</h2>
-      <div class="stats">
-        <div><strong>24/7</strong><span>Online presence</span></div>
-        <div><strong>100%</strong><span>Mobile responsive</span></div>
-        <div><strong>Fast</strong><span>Easy deployment</span></div>
+      <div class="container solution-grid">
+        <a class="solution-card" href="#contact"><span>01</span><h3>Custom Software Development</h3><p>Workflow platforms, dashboards, CRM tools, business automation, and integrations built around your operations.</p></a>
+        <a class="solution-card" href="#contact"><span>02</span><h3>Web Development</h3><p>High-performance websites, portals, ecommerce experiences, admin panels, and frontend applications.</p></a>
+        <a class="solution-card" href="#contact"><span>03</span><h3>Mobile App Development</h3><p>Cross-platform mobile applications for iOS and Android using Flutter and modern backend services.</p></a>
+        <a class="solution-card" href="#contact"><span>04</span><h3>Cloud & API Engineering</h3><p>Secure APIs, cloud-ready services, database design, authentication, payments, and third-party integrations.</p></a>
+        <a class="solution-card" href="#contact"><span>05</span><h3>IT Consulting & Advisory</h3><p>Architecture guidance, modernization planning, technical audits, and product roadmap support.</p></a>
+        <a class="solution-card" href="#contact"><span>06</span><h3>Product Support</h3><p>Ongoing improvements, bug fixes, release management, monitoring, and documentation after launch.</p></a>
       </div>
     </section>
 
-    <section id="contact" class="section contact">
-      <div>
-        <p class="eyebrow">Contact</p>
-        <h2>Let’s talk about your business.</h2>
-        <p>Replace this section with your company email, phone number, and address.</p>
+    <section class="section-pad industries">
+      <div class="container section-title light">
+        <span class="eyebrow">Where we work</span>
+        <h2>Solving technology challenges across industries.</h2>
       </div>
-      <form action="mailto:info@intelglobal.net" method="post" enctype="text/plain">
-        <label>Name<input type="text" name="name" placeholder="Your name" required></label>
-        <label>Email<input type="email" name="email" placeholder="you@example.com" required></label>
-        <label>Message<textarea name="message" placeholder="How can we help?" required></textarea></label>
-        <button class="btn" type="submit">Send Message</button>
-      </form>
+      <div class="container industry-row">
+        <span>Retail & ecommerce</span>
+        <span>Healthcare services</span>
+        <span>Logistics</span>
+        <span>Real estate</span>
+        <span>Professional services</span>
+      </div>
+    </section>
+
+    <section id="head-team" class="section-pad">
+      <div class="container section-title">
+        <span class="eyebrow">Leadership</span>
+        <h2>Meet our head team.</h2>
+      </div>
+      <div class="container leaders-grid">
+        <article class="leader-card featured">
+          <img src="assets/images/suhail-ahmed.png" alt="Suhail Ahmed, Co-Founder of Grocereo Online" />
+          <div>
+            <span>Co-Founder</span>
+            <h3>Suhail Ahmed</h3>
+            <p>Suhail guides company vision, client partnerships, and delivery standards so every project stays practical, scalable, and aligned with business outcomes.</p>
+          </div>
+        </article>
+        <article class="leader-card">
+          <img src="assets/images/mahesh.png" alt="Mahesh, Chief Operating Officer of Grocereo Online" />
+          <div>
+            <span>Chief Operating Officer</span>
+            <h3>Mahesh</h3>
+            <p>Mahesh leads operations and project execution, helping teams move from planning to launch with clear communication and dependable delivery.</p>
+          </div>
+        </article>
+        <article class="mini-leader"><span>CFO</span><h3>Priya Nair</h3><p>Oversees finance, planning, and sustainable growth.</p></article>
+        <article class="mini-leader"><span>Director of Engineering</span><h3>Arjun Mehta</h3><p>Leads architecture, quality, and engineering process.</p></article>
+        <article class="mini-leader"><span>VP of Product</span><h3>Nisha Patel</h3><p>Turns client goals into product roadmaps and releases.</p></article>
+      </div>
+      <div class="container center-link"><a class="btn btn-secondary" href="team.html">View full team</a></div>
+    </section>
+
+    <section id="why-us" class="section-pad why">
+      <div class="container split">
+        <div>
+          <span class="eyebrow">Why choose us</span>
+          <h2>Reliable engineering with clear ownership.</h2>
+        </div>
+        <div class="check-list">
+          <p>✓ Clear communication from discovery to launch.</p>
+          <p>✓ Scalable codebases built for long-term maintenance.</p>
+          <p>✓ Product, design, backend, frontend, and mobile expertise in one team.</p>
+          <p>✓ Practical documentation and handoff support.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="technologies" class="section-pad tech-section">
+      <div class="container section-title">
+        <span class="eyebrow">Technology stack</span>
+        <h2>We use modern technologies to run your project smoothly.</h2>
+      </div>
+      <div class="container tech-grid">
+        <span>JavaScript</span><span>TypeScript</span><span>Node.js</span><span>.NET</span><span>Angular</span><span>React</span><span>Flutter</span>
+      </div>
+    </section>
+
+    <section id="contact" class="section-pad contact-section">
+      <div class="container contact-grid">
+        <div>
+          <span class="eyebrow">Contact us</span>
+          <h2>Partner with Grocereo Online for comprehensive software delivery.</h2>
+          <p>Tell us about the product, platform, or business workflow you want to improve. We will help you understand the best technical path forward.</p>
+          <div class="contact-cards">
+            <a href="tel:8475054620"><strong>Phone</strong><span>847 505 4620</span></a>
+            <a href="mailto:hello@grocereo.online"><strong>Email</strong><span>hello@grocereo.online</span></a>
+            <div><strong>Address</strong><span>4251 Greenleaf Ct, Apt 111, Park City, IL 60085</span></div>
+          </div>
+        </div>
+        <form class="contact-form" action="mailto:hello@grocereo.online" method="post" enctype="text/plain">
+          <label>Full name<input name="name" type="text" placeholder="Your name" required></label>
+          <label>Company email<input name="email" type="email" placeholder="you@company.com" required></label>
+          <label>How can we help?<select name="service"><option>Custom Software Development</option><option>Web Development</option><option>Mobile Development</option><option>IT Consulting</option><option>Other</option></select></label>
+          <label>Message<textarea name="message" rows="4" placeholder="Tell us a little about your project"></textarea></label>
+          <button class="btn btn-primary" type="submit">Send message</button>
+        </form>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <p>© <span id="year"></span> Intel Global. All rights reserved.</p>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand footer-brand" href="index.html"><span class="brand-mark">G</span><span>Grocereo<span>Online</span></span></a>
+        <p>Modern software, web, and mobile solutions for growing businesses.</p>
+      </div>
+      <div><h4>Solutions</h4><a href="#solutions">Software Development</a><a href="#solutions">Web Development</a><a href="#solutions">Mobile Development</a><a href="#solutions">IT Consulting</a></div>
+      <div><h4>Company</h4><a href="#about">About us</a><a href="team.html">Team</a><a href="#why-us">Why us</a><a href="#contact">Contact</a></div>
+      <div><h4>Contact</h4><p>4251 Greenleaf Ct, Apt 111<br>Park City, IL 60085</p><a href="tel:8475054620">847 505 4620</a></div>
+    </div>
+    <div class="container copyright">© 2026 Grocereo Online. All rights reserved.</div>
   </footer>
-
-  <script src="script.js"></script>
+  <script src="assets/script.js"></script>
 </body>
 </html>
