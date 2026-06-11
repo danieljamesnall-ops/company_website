@@ -1,0 +1,116 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-navy-950: #0a0f1c;
+  --color-navy-900: #111827;
+  --color-navy-800: #1a2332;
+  --color-navy-700: #243044;
+  --color-navy-600: #2d3a52;
+  --color-gold: #d4a853;
+  --color-gold-light: #e8c47a;
+  --color-gold-dark: #b8923f;
+  --font-sans: var(--font-dm-sans);
+  --font-display: var(--font-outfit);
+}
+
+:root {
+  --background: #0a0f1c;
+  --foreground: #f1f5f9;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+::selection {
+  background: rgba(212, 168, 83, 0.3);
+  color: #fff;
+}
+
+.gradient-mesh {
+  background:
+    radial-gradient(ellipse 80% 50% at 50% -20%, rgba(212, 168, 83, 0.15), transparent),
+    radial-gradient(ellipse 60% 40% at 100% 0%, rgba(59, 130, 246, 0.08), transparent),
+    radial-gradient(ellipse 50% 30% at 0% 100%, rgba(139, 92, 246, 0.06), transparent);
+}
+
+.glass {
+  background: rgba(17, 24, 39, 0.6);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #fff 0%, #d4a853 50%, #e8c47a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+  width: max-content;
+}
+
+@keyframes float-up {
+  0% {
+    transform: translateY(0) translateX(0) scale(1);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-110vh) translateX(20px) scale(1.1);
+    opacity: 0;
+  }
+}
+
+.bubble {
+  animation-name: float-up;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bubble {
+    animation: none;
+    display: none;
+  }
+}
+
+.footer-surface {
+  background:
+    linear-gradient(180deg, rgba(212, 168, 83, 0.04) 0%, transparent 120px),
+    radial-gradient(ellipse 80% 60% at 50% 0%, rgba(212, 168, 83, 0.06), transparent),
+    #050810;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+.footer-accent-line {
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(212, 168, 83, 0.5) 20%,
+    rgba(212, 168, 83, 0.8) 50%,
+    rgba(212, 168, 83, 0.5) 80%,
+    transparent
+  );
+}
