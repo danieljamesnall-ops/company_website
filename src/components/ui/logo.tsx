@@ -10,7 +10,7 @@ export function Logo({ className }: { className?: string }) {
         alt={siteConfig.name}
         width={1186}
         height={356}
-        className="h-10 w-auto"
+        className="h-20 w-auto"
         priority
       />
     </div>
